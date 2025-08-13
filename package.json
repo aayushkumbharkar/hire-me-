@@ -8,7 +8,8 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "client": "npm start --prefix client",
     "server": "npm start --prefix server",
-    "build": "npm run build --prefix client",
+    "build": "npm install && cd client && npm install && npm run build && cd ../server && npm install",
+    "start": "cd server && npm start",
     "seed": "npm run seed --prefix server"
   },
   "keywords": [
