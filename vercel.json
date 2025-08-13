@@ -20,6 +20,9 @@
             "dest": "server/server.js"
         },
         {
+            "handle": "filesystem"
+        },
+        {
             "src": "/(.*)",
             "dest": "client/dist/index.html"
         }
